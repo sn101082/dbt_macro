@@ -1,0 +1,38 @@
+version: 2
+models:
+  - name: customer_m
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+        meta:
+          data_type: int
+      - name: cust_name
+        meta:
+          data_type: string
+      - name: city
+      - name: grade
+        meta:
+        data_type: int
+      - name: salesman_id
+        meta:
+        data_type: int
+  - name: sales_m
+    columns:
+      - name: salesman_id
+        tests:
+          - unique
+          - not_null
+        meta:
+          data_type: int
+      - name: name
+        meta:
+          data_type: string
+      - name: city
+      - name: grade
+        meta:
+        data_type: int
+      - name: commission
+        meta:
+        data_type: double

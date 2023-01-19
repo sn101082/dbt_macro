@@ -1,0 +1,10 @@
+# customer_m.sql
+
+{{ config(alias='customer_m') }}
+
+  with source as (
+  {{ std_staging_query(source('dbt_macro', 'customer'), model) }}
+  )
+  select
+  *
+  from source

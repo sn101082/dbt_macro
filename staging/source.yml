@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: dbt_macro
+    schema: test_demo
+    tables:
+      - name: sales
+      - name: customer

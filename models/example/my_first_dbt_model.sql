@@ -1,0 +1,1 @@
+{{process_meta_table_step(table_name='test_demo.metadata')}}
